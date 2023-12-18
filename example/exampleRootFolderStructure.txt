@@ -1,0 +1,12 @@
+(Make sure folders fit *exactly* the format of: 'Movies', 'Music', or 'TV_Shows' -- or change script to add more)
+
+/media/emby_server/Movies:
+
+/media/emby_server/Music:
+
+/media/emby_server/TV_Shows:
+
+/media/emby_server/USB_Media:
+USB_1
+
+^^ NOTE: (USB_1) is *generated* when a storage USB is inserted

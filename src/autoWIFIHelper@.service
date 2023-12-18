@@ -1,0 +1,13 @@
+[Unit]
+Description=autoWIFI helper service to allow ping/umount ops in script
+RequiresMountsFor=/dev/%i
+
+[Service]
+User=root
+Type=oneshot
+RemainAfterExit=yes
+Environment="DEVNAME=/dev/%i"
+ExecStart=/usr/local/sbin/autoFnsWrapper.sh $DEVNAME
+
+[Install]
+WantedBy=multi-user.target

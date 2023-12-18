@@ -1,0 +1,1 @@
+SUBSYSTEM=="block", ACTION=="add", ENV{DEVTYPE}=="disk", TAG+="systemd", ENV{SYSTEMD_WANTS}+="autoWIFIHelper@%k.service"

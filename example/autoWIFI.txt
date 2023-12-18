@@ -1,0 +1,2 @@
+ssid: My Wifi Net 5GHz
+pass: Pass1234
