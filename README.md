@@ -27,7 +27,6 @@ Then, be sure to restart udev / system services:
 # Use
 
 Usage Summary: 
-
  - Make sure your USB drive is storing any/all media in one of 3 folders (named *exactly* as such): 'Movies', 'Music', and 'TV_Shows'
  - After installing these scripts, your USB drives will be automatically mounted to /media/emby_server/USB_Media/USB_#/ -- where '#' will start at '1' and continue upwards (or will choose the lowest number with an empty directory)
  - Once the USB drive is mounted, my script will create symbolic links (no data transfer) to the emby_server folders of the exact same names ('/media/emby_server/Movies/', '/media/emby_server/Music/', '/media/emby_server/TV_Shows/')
