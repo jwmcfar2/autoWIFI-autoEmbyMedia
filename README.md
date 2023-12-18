@@ -28,9 +28,12 @@ Then, be sure to restart udev / system services:
 
 Usage Summary: 
 
- Make sure your USB drive is storing any/all media in one of 3 folders (named *exactly* as such): 'Movies', 'Music', and 'TV_Shows'. After installing these scripts, your USB drives will be automatically mounted to /media/emby_server/USB_Media/USB_#/ -- where '#' will start at '1' and continue upwards (or will choose the lowest number with an empty directory). Then, once mounted, my script will create symbolic links (no data transfer) to the emby_server folders of the exact same names ('/media/emby_server/Movies/', '/media/emby_server/Music/', '/media/emby_server/TV_Shows/') so that you can connect several drives with the same naming convention, and these links will merge together in the emby_server categories.
+ - Make sure your USB drive is storing any/all media in one of 3 folders (named *exactly* as such): 'Movies', 'Music', and 'TV_Shows'
+ - After installing these scripts, your USB drives will be automatically mounted to /media/emby_server/USB_Media/USB_#/ -- where '#' will start at '1' and continue upwards (or will choose the lowest number with an empty directory)
+ - Once the USB drive is mounted, my script will create symbolic links (no data transfer) to the emby_server folders of the exact same names ('/media/emby_server/Movies/', '/media/emby_server/Music/', '/media/emby_server/TV_Shows/')
+ - This allows you to connect several drives with the same naming convention, and these links will merge together in the emby_server categories (e.g. - USB_1/TV_Shows -> emby_server/TV_Shows && USB_2/TV_Shows -> emby_server/TV_Shows).
 
- Please refer to Emby on how to add these folder structures to your server (I would recommend adding the 3 I mentioned, PLUS the folder 'USB_Media', in case you cannot find something in the mentioned genres).
+ Please refer to Emby on how to add these folder structures to your server (I would recommend adding the 3 genre folders I mentioned, PLUS the folder 'USB_Media', in case you cannot find something in the mentioned genres).
 
 Important Details:
 
