@@ -27,7 +27,7 @@ Then, be sure to restart udev / system services:
 # Use
 
 Usage Summary: 
- - Plugging in new USB storage will initiate my scripts (negligible performance impact, **_but_** if successful the drive remains mounted to emby location)
+ - Plugging in USB storage will initiate my scripts (negligible performance impact, **_but_** if successful the drive remains mounted to emby location)
  - If it contains a *specifically formatted* text file called "autoWIFI.txt" (read 'Important Details' about 'autoWIFI'), this script will parse it for the ssid and password provided and connect the first discovered wlan device to it (deleting it on success)
  - Make sure your USB drive is storing any/all media in one of 3 folders (named *exactly* as such): 'Movies', 'Music', and 'TV_Shows'
  - After installing these scripts, your USB drives will be automatically mounted to /media/emby_server/USB_Media/USB_#/ -- where '#' will start at '1' and continue upwards (or will choose the lowest number with an empty directory)
